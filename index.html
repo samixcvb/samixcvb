@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accounting Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Accounting Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#add-party">Add Party</a></li>
+        <li><a href="#add-item">Add Item</a></li>
+        <li><a href="#add-sale">Add Sale</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Add Party Section -->
+    <section id="add-party">
+      <h2>Add Party</h2>
+      <form id="party-form">
+        <label for="party-name">Party Name:</label>
+        <input type="text" id="party-name" required>
+        <label for="party-address">Address:</label>
+        <input type="text" id="party-address" required>
+        <label for="party-number">Contact Number:</label>
+        <input type="text" id="party-number" required>
+        <button type="button" onclick="addParty()">Add Party</button>
+      </form>
+      <ul id="party-list"></ul>
+    </section>
+
+    <!-- Add Item Section -->
+    <section id="add-item">
+      <h2>Add Item</h2>
+      <form id="item-form">
+        <label for="item-name">Item Name:</label>
+        <input type="text" id="item-name" required>
+        <label for="item-price">Price:</label>
+        <input type="number" id="item-price" required>
+        <button type="button" onclick="addItem()">Add Item</button>
+      </form>
+      <ul id="item-list"></ul>
+    </section>
+
+    <!-- Add Sale Section -->
+    <section id="add-sale">
+      <h2>Add Sale</h2>
+      <form id="sale-form">
+        <label for="sale-item">Item Name:</label>
+        <input type="text" id="sale-item" required>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" required>
+        <label for="price">Price:</label>
+        <input type="number" id="sale-price" required>
+        <button type="button" onclick="addSale()">Add Sale</button>
+      </form>
+      <ul id="sale-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
